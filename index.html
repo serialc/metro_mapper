@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="/imgs/logo.svg" type="image/svg+xml">
+        <title>Metro Mapper</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/metromap.css" rel="stylesheet">
+        <script src="js/d3.min.js"></script>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container">
+                <a class="navbar-brand" href="/">
+                    <img src="/imgs/logo.svg" class="rounded-3 me-2" height="50" style="background:white"> Metro Mapper
+                </a>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <svg id='metromap' width="100%" viewbox="0 0 400 400">
+<style>
+.station {
+    fill: white;
+    stroke: black;
+}
+</style>
+                        <g id="mmlabels">
+                        </g>
+                        <g id="mmpaths">
+                        </g>
+                        <g id="mmstations">
+                        </g>
+                    </svg>
+                </div>
+                <div class="col-md-3">
+                    interaction
+                </div>
+            </div>
+        </div>
+        <script src="js/metromap.js"></script>
+    </body>
+</html>
